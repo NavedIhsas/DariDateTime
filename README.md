@@ -5,11 +5,11 @@ This .Net and c# utility package provides methods for seamless conversion betwee
 
 ## Methods
 
-### 1. ToDariDateTime
+### 1. ToDari
    - Converts a Gregorian date to Dari (Shamsi).
    - Supports both default and custom date formats.
 
-### 2. ToDariDateTime with Custom Format
+### 2. ToDari with Custom Format
    - Extends the conversion functionality by allowing users to specify a custom date format.
 
 ### 3. ToDateTime
