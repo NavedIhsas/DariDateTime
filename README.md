@@ -1,9 +1,23 @@
-# DariDateTime
 
-DariDateConverter is a C# utility library that enables the conversion of Dari (Shamsi) dates to Gregorian (Miladi) dates.
+# Dari Date Converter
+
+This .Net and c# utility package provides methods for seamless conversion between Gregorian (Miladi) and Dari (Shamsi) calendars.
+
+## Methods
+
+### 1. ToDariDateTime
+   - Converts a Gregorian date to Dari (Shamsi).
+   - Supports both default and custom date formats.
+
+### 2. ToDariDateTime with Custom Format
+   - Extends the conversion functionality by allowing users to specify a custom date format.
+
+### 3. ToDateTime
+   - Converts a Dari (Shamsi) date to Gregorian (Miladi).
+
+These methods empower developers to handle date conversions effortlessly within their C# and .Net applications, promoting compatibility with both calendar systems.
 
 ## Installation
-
 
 package manager
 ``` 
