@@ -60,7 +60,7 @@ public static class Extensions
     /// </summary>
     /// <param name="dariDate">تاریخ میلادی</param>
     /// <returns>تاریخ میلادی</returns>
-    public static System.DateTime? ToDariDateTime(this string dariDate)
+    public static System.DateTime? ToDateTime(this string dariDate)
     {
         if (string.IsNullOrEmpty(dariDate))
             return null;

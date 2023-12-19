@@ -24,13 +24,3 @@ public enum DateFormat
     /// </summary>
     YearMonthNameDay,
 }
-
-
-public class Test
-{
-    public string test()
-    {
-        var miladiDate = System.DateTime.Now;
-        var DariDate = miladiDate.ToDari(DateFormat.YearMonthNameDay);
-    }
-}
