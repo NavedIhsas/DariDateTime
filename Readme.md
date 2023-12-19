@@ -46,17 +46,16 @@ DateTime miladiDate = DateTime.Now;
 var DariDate = miladiDate.ToDariDateTime(customFormat);
 ```
 
-## Converet Dari Date to DateTime
+## Convert Date from Shamsi (Dari) to Gregorian
 
 ```csharp
 va rdariDate = "1402/09/27";
 var miladiDate = dariDate.ToDateTime();
 ```
-This method converts the given Dari (Shamsi) date to Gregorian (Miladi) dateم
+This method takes a string containing a Shamsi date as input and converts it to a Gregorian date. The output of this method is a DateTime object capable of representing the resulting Gregorian date. If the Shamsi date is not valid, the method returns null.
 <br>
 Sample Output:
-
-‍‍‍‍‍```csharp
+```csahrp
 2023/12/19
 ```
 
