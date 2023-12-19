@@ -4,11 +4,6 @@ DariDateConverter is a C# utility library that enables the conversion of Dari (S
 
 ## Installation
 
-cli
-``` 
-dotnet add package DariDateTime --version 1.1.0
-```
-
 package manager
 ``` 
 Install-Package DariDateTime
@@ -41,7 +36,7 @@ This will convert the current Gregorian date to Dari with the Month Name format 
 ### example 3: Convert with Custom Format
 ```C#
 DateTime miladiDate = DateTime.Now;
-string DariDate = miladiDate.ToDariDateTime(customFormat);
+string DariDate = miladiDate.ToDari(customFormat);
 ```
 
 This will convert the current Gregorian date to Dari with the specified custom format.
