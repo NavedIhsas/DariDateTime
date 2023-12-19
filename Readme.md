@@ -2,34 +2,45 @@
 
 DariDateConverter is a C# utility library that enables the conversion of Dari (Shamsi) dates to Gregorian (Miladi) dates.
 
-## Getting Started
+## Installation
 
-To use DariDateConverter, follow these simple steps:
+cli
+``` 
+dotnet add package DariDateTime --version 1.1.0
+```
 
-### Prerequisites
-
-There are no additional prerequisites for using DariDateTime beyond standard package installation.
+package manager
+``` 
+Install-Package DariDateTime
+```
 
 ## Usage
-```bash
-dotnet add package DariDateTime
-```
 
 Learn how to use DariDateConverter with the following examples:
 
-### Method 1: Convert with Default Format
-
+### example 1: Convert with Default Format
 ```c#
-DateTime miladiDate = DateTime.Now;
-string DariDate = miladiDate.ToDariDateTime();
+var miladiDate = DateTime.Now;
+var DariDate = miladiDate.ToDari();
+//or
+var DariDate = miladiDate.ToDari(DateFormat.YearMonthDay);
 ```
 This will convert the current Gregorian date to Dari with the default format ("yyyy/MM/dd").
+نمونه خروجی ==> 1402/09/27
 
-### Method 2: Convert with Custom Format
 
+### example 2: Convert with month name
+```c#
+  var miladiDate = System.DateTime.Now;
+  var DariDate = miladiDate.ToDari(DateFormat.YearMonthNameDay);
+```
+This will convert the current Gregorian date to Dari with the Month Name format ("yyyy MMMM dd").
+نمونه خروجی ==> 27 قوس 1402
+
+
+### example 3: Convert with Custom Format
 ```C#
 DateTime miladiDate = DateTime.Now;
-string customFormat = "yyyy/MMMM/dd";
 string DariDate = miladiDate.ToDariDateTime(customFormat);
 ```
 
@@ -38,5 +49,5 @@ This will convert the current Gregorian date to Dari with the specified custom f
 ## Feedback
 We appreciate your feedback! Connect with us:
 
-GitHub Issues
-Twitter: @YourTwitterHandle
+GitHub Issues:
+GitHub: [GitHub](https://github.com/NavedIhsas/)
