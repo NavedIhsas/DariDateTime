@@ -7,8 +7,7 @@ public static class Tools
         return dateFormat switch
         {
             DateFormat.YearMonthDay => "yyyy/MM/dd",
-            DateFormat.YearMonthNameDay => "yyyy/MMMM/dd",
-            DateFormat.YearDayMonthName => "yyyy/dd/MMMM",
+            DateFormat.YearMonthNameDay => "yyyy MMMM dd",
             _ => throw new ArgumentOutOfRangeException(nameof(dateFormat), dateFormat, null)
         };
     }
@@ -20,11 +19,18 @@ public enum DateFormat
     ///     خروجی: "1402/09/27"
     /// </summary>
     YearMonthDay,
-
     /// <summary>
     ///     خروجی: 1402/قوس/27
     /// </summary>
     YearMonthNameDay,
+}
 
-    YearDayMonthName
+
+public class Test
+{
+    public string test()
+    {
+        var miladiDate = System.DateTime.Now;
+        var DariDate = miladiDate.ToDari(DateFormat.YearMonthNameDay);
+    }
 }

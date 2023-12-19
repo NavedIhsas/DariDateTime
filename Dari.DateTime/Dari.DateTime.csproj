@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <PackageId>DariDateTime</PackageId>
@@ -12,9 +12,13 @@
     <PackageLicenseFile>License.txt</PackageLicenseFile>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <Description>تبدیل تاری شمسی به میلادی </Description>
-    <PackageReleaseNotes>بدون تست و نسخه مقدماتی</PackageReleaseNotes>
+    <PackageReleaseNotes>Adding conversion from Gregorian to Persian date with DateTime output .
+(without tests)</PackageReleaseNotes>
+    <PackageTags>DariDateTime, Dari date time on .netCore</PackageTags>
+    <RepositoryUrl>https://github.com/NavedIhsas/DariDateTime</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/NavedIhsas/DariDateTime</PackageProjectUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -27,10 +31,6 @@
 
   <ItemGroup>
     <None Include="..\..\..\..\OneDrive\Documents\License.txt">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\..\..\..\OneDrive\Documents\Readme.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
