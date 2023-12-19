@@ -49,5 +49,5 @@ This will convert the current Gregorian date to Dari with the specified custom f
 ## Feedback
 We appreciate your feedback! Connect with us:
 
-GitHub Issues:
-GitHub: [GitHub](https://github.com/NavedIhsas/)
+[GitHub](https://github.com/NavedIhsas/)
+[Facebook](https://www.facebook.com/qudratihsas/)
