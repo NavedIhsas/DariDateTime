@@ -22,6 +22,7 @@ var DariDate = miladiDate.ToDari();
 var DariDate = miladiDate.ToDari(DateFormat.YearMonthDay);
 ```
 This will convert the current Gregorian date to Dari with the default format ("yyyy/MM/dd").
+<br>
 Sample Output:
 ```csharp
  1402/09/27
@@ -33,9 +34,10 @@ Sample Output:
   var DariDate = miladiDate.ToDari(DateFormat.YearMonthNameDay);
 ```
 This will convert the current Gregorian date to Dari with the Month Name format ("yyyy MMMM dd").
+<br>
 Sample Output:
 ```csharp
-/ ==> 27 قوس 1402
+ "27 قوس 1402"
 ```
 
 ### example 3: Convert with Custom Format
@@ -50,15 +52,17 @@ var DariDate = miladiDate.ToDariDateTime(customFormat);
 va rdariDate = "1402/09/27";
 var miladiDate = dariDate.ToDateTime();
 ```
-
+This method converts the given Dari (Shamsi) date to Gregorian (Miladi) dateم
+<br>
 Sample Output:
+
 ‍‍‍‍‍```csharp
 2023/12/19
 ```
-This method converts the given Dari (Shamsi) date to Gregorian (Miladi) dateم
 
 ## Feedback
 We appreciate your feedback! Connect with us:
 
 [GitHub](https://github.com/NavedIhsas/)
+<br>
 [Facebook](https://www.facebook.com/qudratihsas/)
