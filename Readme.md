@@ -4,6 +4,7 @@ DariDateConverter is a C# utility library that enables the conversion of Dari (S
 
 ## Installation
 
+
 package manager
 ``` 
 Install-Package DariDateTime
@@ -21,8 +22,10 @@ var DariDate = miladiDate.ToDari();
 var DariDate = miladiDate.ToDari(DateFormat.YearMonthDay);
 ```
 This will convert the current Gregorian date to Dari with the default format ("yyyy/MM/dd").
-نمونه خروجی ==> 1402/09/27
-
+Sample Output:
+```csharp
+ 1402/09/27
+```
 
 ### example 2: Convert with month name
 ```c#
@@ -30,16 +33,29 @@ This will convert the current Gregorian date to Dari with the default format ("y
   var DariDate = miladiDate.ToDari(DateFormat.YearMonthNameDay);
 ```
 This will convert the current Gregorian date to Dari with the Month Name format ("yyyy MMMM dd").
-نمونه خروجی ==> 27 قوس 1402
-
+Sample Output:
+```csharp
+/ ==> 27 قوس 1402
+```
 
 ### example 3: Convert with Custom Format
 ```C#
 DateTime miladiDate = DateTime.Now;
-string DariDate = miladiDate.ToDari(customFormat);
+var DariDate = miladiDate.ToDariDateTime(customFormat);
 ```
 
-This will convert the current Gregorian date to Dari with the specified custom format.
+## Converet Dari Date to DateTime
+
+```csharp
+va rdariDate = "1402/09/27";
+var miladiDate = dariDate.ToDateTime();
+```
+
+Sample Output:
+‍‍‍‍‍```csharp
+2023/12/19
+```
+This method converts the given Dari (Shamsi) date to Gregorian (Miladi) dateم
 
 ## Feedback
 We appreciate your feedback! Connect with us:
