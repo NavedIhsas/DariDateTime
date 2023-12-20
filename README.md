@@ -16,13 +16,6 @@ This C# utility package provides methods for seamless conversion between Gregori
 
 These methods empower developers to handle date conversions effortlessly within their C# applications, promoting compatibility with both calendar systems.
 
-
-package manager
-
-``` nuget
-Install-Package DariDateTime
-```
-<br>
 ### example 1: Convert with defualt format
 ``` csharp
 var miladiDate = DateTime.Now;
