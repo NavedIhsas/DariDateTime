@@ -18,9 +18,15 @@ These methods empower developers to handle date conversions effortlessly within 
 
 
 package manager
-``` 
+```
 Install-Package DariDateTime
+```
+<br>
+### example 1: Convert with defualt format
+``` 
+var miladiDate = DateTime.Now;
 var DariDate = miladiDate.ToDari();
+//or
 var DariDate = miladiDate.ToDari(DateFormat.YearMonthDay);
 ```
 This will convert the current Gregorian date to Dari with the default format ("yyyy/MM/dd").
