@@ -1,23 +1,24 @@
-# Persian Date Converter
+# ToDari Date Converter
 
-This C# utility package provides methods for seamless conversion between Gregorian (Miladi) and Persian (Shamsi) calendars.
+This C# utility package provides methods for seamless conversion between Gregorian (Miladi) and ToDari (Shamsi) calendars.
 
 ## Methods
 
-### 1. ToPersianDateTime
-   - Converts a Gregorian date to Persian (Shamsi).
+### 1. ToDari
+   - Converts a Gregorian date to ToDari (Shamsi).
    - Supports both default and custom date formats.
 
-### 2. ToPersianDateTime with Custom Format
+### 2. ToDari with Custom Format
    - Extends the conversion functionality by allowing users to specify a custom date format.
 
 ### 3. ToDateTime
-   - Converts a Persian (Shamsi) date to Gregorian (Miladi).
+   - Converts a ToDari (Shamsi) date to Gregorian (Miladi).
 
 These methods empower developers to handle date conversions effortlessly within their C# applications, promoting compatibility with both calendar systems.
 
 
 package manager
+
 ```
 Install-Package DariDateTime
 ```
