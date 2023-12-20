@@ -19,7 +19,7 @@ These methods empower developers to handle date conversions effortlessly within 
 
 package manager
 
-```
+``` nuget
 Install-Package DariDateTime
 ```
 <br>
