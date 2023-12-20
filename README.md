@@ -1,15 +1,26 @@
-# DariDateTime
+# Persian Date Converter
 
-DariDateConverter is a C# utility library that enables the conversion of Dari (Shamsi) dates to Gregorian (Miladi) dates.
+This C# utility package provides methods for seamless conversion between Gregorian (Miladi) and Persian (Shamsi) calendars.
 
+## Methods
 
-## Installation
+### 1. ToPersianDateTime
+   - Converts a Gregorian date to Persian (Shamsi).
+   - Supports both default and custom date formats.
+
+### 2. ToPersianDateTime with Custom Format
+   - Extends the conversion functionality by allowing users to specify a custom date format.
+
+### 3. ToDateTime
+   - Converts a Persian (Shamsi) date to Gregorian (Miladi).
+
+These methods empower developers to handle date conversions effortlessly within their C# applications, promoting compatibility with both calendar systems.
 
 
 package manager
 ``` 
 Install-Package DariDateTime
-	@@ -22,49 +21,28 @@ var DariDate = miladiDate.ToDari();
+var DariDate = miladiDate.ToDari();
 var DariDate = miladiDate.ToDari(DateFormat.YearMonthDay);
 ```
 This will convert the current Gregorian date to Dari with the default format ("yyyy/MM/dd").
