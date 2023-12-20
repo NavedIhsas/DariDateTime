@@ -24,7 +24,7 @@ Install-Package DariDateTime
 ```
 <br>
 ### example 1: Convert with defualt format
-``` 
+``` csharp
 var miladiDate = DateTime.Now;
 var DariDate = miladiDate.ToDari();
 //or
@@ -39,7 +39,7 @@ Sample Output:
 ```
 
 ### example 2: Convert with month name
-```c#
+```csharp
   var miladiDate = System.DateTime.Now;
   var DariDate = miladiDate.ToDari(DateFormat.YearMonthNameDay);
 ```
@@ -52,7 +52,7 @@ Sample Output:
 ```
 
 ### example 3: Convert with Custom Format
-```C#
+```csharp
 var miladiDate = DateTime.Now;
 var dariDate = miladiDate.ToDariDateTime(customFormat);
 ```
